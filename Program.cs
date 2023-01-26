@@ -24,4 +24,10 @@ void Check(int size, string[] array)
                 Console.Write(array[i] + " ");
 }
 
+Console.Write("Input a number of elements: ");
+int length = Convert.ToInt32(Console.ReadLine());
+
+string[] myArray = CreateRandomArray(length);
+ShowArray(myArray);
+Check(length,myArray);
 
